@@ -77,7 +77,7 @@ class SearchBar extends React.Component {
 class FilterableProductTable extends React.Component {
     render() {
         return (
-            <div>
+            <div className="m-5">
                 <SearchBar/>
                 <ProductTable products={this.props.products}/>
             </div>
