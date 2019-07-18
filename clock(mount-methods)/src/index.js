@@ -5,7 +5,7 @@ import './index.css';
 class Clock extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {date: new Date()};
+    this.state = {date: this.props.initialDate};
   }
 
   componentDidMount() {
@@ -38,7 +38,7 @@ class Clock extends React.Component {
 
 
 ReactDOM.render(
-  <Clock/>,
+  <Clock initialDate={new Date()}/>,
   document.getElementById('root')
 );
 
